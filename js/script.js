@@ -66,7 +66,7 @@ function getAverageMark(students) {
         return sum + currentElement;
       }, 0) / studentMarks.length;
   });
-  return console.log(students);
+  return students;
 }
 
 
@@ -96,19 +96,6 @@ const averagePrice =
   }, 0) / suvArray.length;
 console.log(averagePrice);
 
--------------------------------------
-
-const suvArray = vehicles.filter(function (vehicles) {
-return vehicles.type.toLowerCase() === "suv";
-});
-let sum = 0;
-let averagePrice = 0;
-suvArray.forEach((suvObj) => {
-sum += suvObj.price;
-averagePrice = sum / suvArray.length});
-console.log(averagePrice);
-
---------------------------------------
 
 const suvArray = vehicles.filter(function (vehicles) {
   return vehicles.type.toLowerCase() === "suv";

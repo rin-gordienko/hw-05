@@ -11,24 +11,11 @@ searchString("Let it be", "be");
 // которая будет принимать строку. 
 // Функция возвращает строку, где первый символ будет с заглавной буквы
 
-let newString;
-function capitalizeFirstLetter (str) {
-  if (!str) {
-    return str;
-  } else {
-    newString = str[0].toUpperCase();
-    newString += str.slice(1);
-  }
-  return newString
-}
-
-// !!! или
-
 function capitalizeFirstLetter(str) {
   if (!str) {
     return str;
   } else {
-    return str[0].toUpperCase() + str.slice(1);
+    return `${str[0].toUpperCase()}${str.slice(1)}`;
   }
 }
 

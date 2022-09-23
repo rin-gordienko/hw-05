@@ -97,16 +97,6 @@ const averagePrice =
 console.log(averagePrice);
 
 
-const suvArray = vehicles.filter(function (vehicles) {
-  return vehicles.type.toLowerCase() === "suv";
-});
-suvArray.forEach((suvObj) => {
-  let suvPrices = Object.values(suvObj.price);
-  console.log(suvPrices); 
-  // ------ почему не получается отдельно достать price
-})
-
-
 // 6. Напишите функцию getKeysCount(obj), которая возвращает 
 // количество свойств объекта.
 
